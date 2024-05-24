@@ -7,7 +7,6 @@ const getPokemonFromApi = async (id) => {
    const response = await res.json()
    return response
 }
-
 const displayPokemonImage = async (id) => {
    // it can accept an specific id (or pokemon name),
    // if no id is provided it generates a random one
