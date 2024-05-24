@@ -10,7 +10,8 @@ const getPokemonFromApi = async (id) => {
 const displayRandomPokemonImage = async () => {
    const randomId = Math.floor(Math.random() * (151 + 1)) + 1
    const pokemon = await getPokemonFromApi(randomId)
-   const pokemonImageUrl = pokemon.sprites.other.home.front_default
+   const pokemonImageUrl =
+      pokemon.sprites.other['official-artwork'].front_default
    img.src = pokemonImageUrl
 }
 
